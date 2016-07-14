@@ -1,0 +1,17 @@
+﻿Build started 7/13/2016 4:20:15 PM.
+     1>Project "C:\Users\tester\Documents\Visual Studio 2015\Projects\NtLoadDriver-C++\NtLoadDriver-C++\NtLoadDriver-C++.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\NtLoadDriver-C++.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt "NtLoadDriver-C++.cpp"
+         NtLoadDriver-C++.cpp
+     1>c:\users\tester\documents\visual studio 2015\projects\ntloaddriver-c++\ntloaddriver-c++\ntloaddriver-c++.cpp(28): warning C4800: 'DWORD': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\tester\documents\visual studio 2015\projects\ntloaddriver-c++\ntloaddriver-c++\ntloaddriver-c++.cpp(32): warning C4800: 'DWORD': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\tester\documents\visual studio 2015\projects\ntloaddriver-c++\ntloaddriver-c++\ntloaddriver-c++.cpp(38): warning C4800: 'DWORD': forcing value to bool 'true' or 'false' (performance warning)
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\tester\Documents\Visual Studio 2015\Projects\NtLoadDriver-C++\Debug\NtLoadDriver-C++.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\tester\Documents\Visual Studio 2015\Projects\NtLoadDriver-C++\Debug\NtLoadDriver-C++.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\tester\Documents\Visual Studio 2015\Projects\NtLoadDriver-C++\Debug\NtLoadDriver-C++.lib" /MACHINE:X86 "Debug\NtLoadDriver-C++.obj"
+         Debug\stdafx.obj
+         NtLoadDriver-C++.vcxproj -> C:\Users\tester\Documents\Visual Studio 2015\Projects\NtLoadDriver-C++\Debug\NtLoadDriver-C++.exe
+     1>Done Building Project "C:\Users\tester\Documents\Visual Studio 2015\Projects\NtLoadDriver-C++\NtLoadDriver-C++\NtLoadDriver-C++.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.06
