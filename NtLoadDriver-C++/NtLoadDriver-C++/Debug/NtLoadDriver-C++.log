@@ -1,17 +1,109 @@
-﻿Build started 7/13/2016 4:20:15 PM.
-     1>Project "C:\Users\tester\Documents\Visual Studio 2015\Projects\NtLoadDriver-C++\NtLoadDriver-C++\NtLoadDriver-C++.vcxproj" on node 2 (Build target(s)).
+﻿Build started 7/14/2016 3:40:30 PM.
+     1>Project "C:\Users\tester\Documents\GitHub\HotLoad-LoadDriver\NtLoadDriver-C++\NtLoadDriver-C++\NtLoadDriver-C++.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\NtLoadDriver-C++.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt "NtLoadDriver-C++.cpp"
-         NtLoadDriver-C++.cpp
-     1>c:\users\tester\documents\visual studio 2015\projects\ntloaddriver-c++\ntloaddriver-c++\ntloaddriver-c++.cpp(28): warning C4800: 'DWORD': forcing value to bool 'true' or 'false' (performance warning)
-     1>c:\users\tester\documents\visual studio 2015\projects\ntloaddriver-c++\ntloaddriver-c++\ntloaddriver-c++.cpp(32): warning C4800: 'DWORD': forcing value to bool 'true' or 'false' (performance warning)
-     1>c:\users\tester\documents\visual studio 2015\projects\ntloaddriver-c++\ntloaddriver-c++\ntloaddriver-c++.cpp(38): warning C4800: 'DWORD': forcing value to bool 'true' or 'false' (performance warning)
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\tester\Documents\Visual Studio 2015\Projects\NtLoadDriver-C++\Debug\NtLoadDriver-C++.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\tester\Documents\Visual Studio 2015\Projects\NtLoadDriver-C++\Debug\NtLoadDriver-C++.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\tester\Documents\Visual Studio 2015\Projects\NtLoadDriver-C++\Debug\NtLoadDriver-C++.lib" /MACHINE:X86 "Debug\NtLoadDriver-C++.obj"
-         Debug\stdafx.obj
-         NtLoadDriver-C++.vcxproj -> C:\Users\tester\Documents\Visual Studio 2015\Projects\NtLoadDriver-C++\Debug\NtLoadDriver-C++.exe
-     1>Done Building Project "C:\Users\tester\Documents\Visual Studio 2015\Projects\NtLoadDriver-C++\NtLoadDriver-C++\NtLoadDriver-C++.vcxproj" (Build target(s)).
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\NtLoadDriver-C++.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ntloaddriver.cpp
+         ntloaddriver.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(139): warning C4005: 'MAX_NATURAL_ALIGNMENT': macro redefinition
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(118): note: see previous definition of 'MAX_NATURAL_ALIGNMENT'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(163): warning C4005: 'PROBE_ALIGNMENT': macro redefinition
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(142): note: see previous definition of 'PROBE_ALIGNMENT'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(687): error C2011: '_PROCESSOR_NUMBER': 'struct' type redefinition
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(549): note: see declaration of '_PROCESSOR_NUMBER'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(698): error C2011: '_GROUP_AFFINITY': 'struct' type redefinition
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(560): note: see declaration of '_GROUP_AFFINITY'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(992): error C2011: '_FLOAT128': 'struct' type redefinition
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(710): note: see declaration of '_FLOAT128'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1043): error C2011: '_LARGE_INTEGER': 'union' type redefinition
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(757): note: see declaration of '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1061): error C2011: '_ULARGE_INTEGER': 'union' type redefinition
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(775): note: see declaration of '_ULARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1090): error C2011: '_LUID': 'struct' type redefinition
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(804): note: see declaration of '_LUID'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1191): error C2084: function 'ULONGLONG Int64ShllMod32(ULONGLONG,DWORD)' already has a body
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(884): note: see previous definition of 'Int64ShllMod32'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1207): error C2084: function 'LONGLONG Int64ShraMod32(LONGLONG,DWORD)' already has a body
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(900): note: see previous definition of 'Int64ShraMod32'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1223): error C2084: function 'ULONGLONG Int64ShrlMod32(ULONGLONG,DWORD)' already has a body
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(916): note: see previous definition of 'Int64ShrlMod32'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1446): warning C4005: 'UNICODE_STRING_MAX_BYTES': macro redefinition
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(1040): note: see previous definition of 'UNICODE_STRING_MAX_BYTES'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1490): error C2011: '_LIST_ENTRY': 'struct' type redefinition
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(1049): note: see declaration of '_LIST_ENTRY'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1500): error C2011: '_SINGLE_LIST_ENTRY': 'struct' type redefinition
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(17493): note: see declaration of '_SINGLE_LIST_ENTRY'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1545): error C2011: 'LIST_ENTRY32': 'struct' type redefinition
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(1070): note: see declaration of 'LIST_ENTRY32'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1551): error C2011: 'LIST_ENTRY64': 'struct' type redefinition
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(1076): note: see declaration of 'LIST_ENTRY64'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1571): error C2027: use of undefined type 'LIST_ENTRY64'
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(1076): note: see declaration of 'LIST_ENTRY64'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1571): error C2227: left of '->Flink' must point to class/struct/union/generic type
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1571): error C2027: use of undefined type 'LIST_ENTRY32'
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(1070): note: see declaration of 'LIST_ENTRY32'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1572): error C2027: use of undefined type 'LIST_ENTRY64'
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(1076): note: see declaration of 'LIST_ENTRY64'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1572): error C2227: left of '->Blink' must point to class/struct/union/generic type
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1572): error C2027: use of undefined type 'LIST_ENTRY32'
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(1070): note: see declaration of 'LIST_ENTRY32'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1582): error C2027: use of undefined type 'LIST_ENTRY32'
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(1070): note: see declaration of 'LIST_ENTRY32'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1582): error C2227: left of '->Flink' must point to class/struct/union/generic type
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1582): error C2027: use of undefined type 'LIST_ENTRY64'
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(1076): note: see declaration of 'LIST_ENTRY64'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1583): error C2027: use of undefined type 'LIST_ENTRY32'
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(1070): note: see declaration of 'LIST_ENTRY32'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1583): error C2227: left of '->Blink' must point to class/struct/union/generic type
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1583): error C2027: use of undefined type 'LIST_ENTRY64'
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(1076): note: see declaration of 'LIST_ENTRY64'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(2732): warning C4005: 'MAKELANGID': macro redefinition
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(1962): note: see previous definition of 'MAKELANGID'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(2733): warning C4005: 'PRIMARYLANGID': macro redefinition
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(1963): note: see previous definition of 'PRIMARYLANGID'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(2734): warning C4005: 'SUBLANGID': macro redefinition
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(1964): note: see previous definition of 'SUBLANGID'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(2767): warning C4005: 'MAKELCID': macro redefinition
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(1997): note: see previous definition of 'MAKELCID'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(2770): warning C4005: 'MAKESORTLCID': macro redefinition
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(2000): note: see previous definition of 'MAKESORTLCID'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(2771): warning C4005: 'LANGIDFROMLCID': macro redefinition
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(2001): note: see previous definition of 'LANGIDFROMLCID'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(2772): warning C4005: 'SORTIDFROMLCID': macro redefinition
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(2002): note: see previous definition of 'SORTIDFROMLCID'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(2773): warning C4005: 'SORTVERSIONFROMLCID': macro redefinition
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(2003): note: see previous definition of 'SORTVERSIONFROMLCID'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(2928): error C2766: explicit specialization; '_ENUM_FLAG_INTEGER_FOR_SIZE<1>' has already been defined
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(2156): note: see previous definition of '_ENUM_FLAG_INTEGER_FOR_SIZE<1>'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(2934): error C2766: explicit specialization; '_ENUM_FLAG_INTEGER_FOR_SIZE<2>' has already been defined
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(2162): note: see previous definition of '_ENUM_FLAG_INTEGER_FOR_SIZE<2>'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(2940): error C2766: explicit specialization; '_ENUM_FLAG_INTEGER_FOR_SIZE<4>' has already been defined
+         c:\program files (x86)\windows kits\8.1\include\um\winnt.h(2168): note: see previous definition of '_ENUM_FLAG_INTEGER_FOR_SIZE<4>'
+     1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(2947): error C2953: '_ENUM_FLAG_SIZED_INTEGER': class template has already been defined
+         c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(2944): note: see declaration of '_ENUM_FLAG_SIZED_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\winternl.h(55): error C2011: '_STRING': 'struct' type redefinition
+         c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1389): note: see declaration of '_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\winternl.h(70): error C2011: '_UNICODE_STRING': 'struct' type redefinition
+         c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1429): note: see declaration of '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\winternl.h(136): error C2079: '_PEB_LDR_DATA::InMemoryOrderModuleList' uses undefined struct '_LIST_ENTRY'
+     1>c:\program files (x86)\windows kits\8.1\include\um\winternl.h(141): error C2079: '_LDR_DATA_TABLE_ENTRY::InMemoryOrderLinks' uses undefined struct '_LIST_ENTRY'
+     1>c:\program files (x86)\windows kits\8.1\include\um\winternl.h(145): error C2079: '_LDR_DATA_TABLE_ENTRY::FullDllName' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\winternl.h(158): error C2079: '_RTL_USER_PROCESS_PARAMETERS::ImagePathName' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\winternl.h(159): error C2079: '_RTL_USER_PROCESS_PARAMETERS::CommandLine' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\winternl.h(203): error C2011: '_OBJECT_ATTRIBUTES': 'struct' type redefinition
+         c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(1658): note: see declaration of '_OBJECT_ATTRIBUTES'
+     1>c:\program files (x86)\windows kits\8.1\include\um\winternl.h(240): error C2079: '_SYSTEM_PROCESSOR_PERFORMANCE_INFORMATION::IdleTime' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\winternl.h(241): error C2079: '_SYSTEM_PROCESSOR_PERFORMANCE_INFORMATION::KernelTime' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\winternl.h(242): error C2079: '_SYSTEM_PROCESSOR_PERFORMANCE_INFORMATION::UserTime' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\winternl.h(352): error C2079: '__PUBLIC_OBJECT_TYPE_INFORMATION::TypeName' uses undefined struct '_UNICODE_STRING'
+     1>c:\users\tester\documents\github\hotload-loaddriver\ntloaddriver-c++\ntloaddriver-c++\ntloaddriver.cpp(23): error C2373: 'RtlNtStatusToDosError': redefinition; different type modifiers
+         c:\program files (x86)\windows kits\8.1\include\um\winternl.h(556): note: see declaration of 'RtlNtStatusToDosError'
+     1>c:\users\tester\documents\github\hotload-loaddriver\ntloaddriver-c++\ntloaddriver-c++\ntloaddriver.cpp(30): error C2079: 'DriverServiceName' uses undefined struct '_UNICODE_STRING'
+     1>c:\users\tester\documents\github\hotload-loaddriver\ntloaddriver-c++\ntloaddriver-c++\ntloaddriver.cpp(31): error C2664: 'void RtlInitUnicodeString(PUNICODE_STRING,PCWSTR)': cannot convert argument 1 from 'int *' to 'PUNICODE_STRING'
+         c:\users\tester\documents\github\hotload-loaddriver\ntloaddriver-c++\ntloaddriver-c++\ntloaddriver.cpp(31): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\tester\documents\github\hotload-loaddriver\ntloaddriver-c++\ntloaddriver-c++\ntloaddriver.cpp(36): error C2664: 'NTSTATUS NtLoadDriver(PUNICODE_STRING)': cannot convert argument 1 from 'int *' to 'PUNICODE_STRING'
+         c:\users\tester\documents\github\hotload-loaddriver\ntloaddriver-c++\ntloaddriver-c++\ntloaddriver.cpp(36): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\tester\documents\github\hotload-loaddriver\ntloaddriver-c++\ntloaddriver-c++\ntloaddriver.cpp(37): warning C4390: ';': empty controlled statement found; is this the intent?
+     1>Done Building Project "C:\Users\tester\Documents\GitHub\HotLoad-LoadDriver\NtLoadDriver-C++\NtLoadDriver-C++\NtLoadDriver-C++.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:02.06
+Time Elapsed 00:00:00.68

@@ -1,5 +1,6 @@
 // NtLoadDriver-C++.cpp : Defines the entry point for the console application.
 //
+
 #include "stdafx.h"
 #include <Windows.h>
 #include <ntsecapi.h>
@@ -7,7 +8,7 @@
 #include <stdlib.h>
 #include <locale.h>
 #include <iostream>
-#include <ntdef.h>
+#include "ntdriver.h"
 
 
 
@@ -100,6 +101,7 @@ bool CreateRegKey()
 		RegCloseKey(phkResult);
 		return FALSE;
 	}
+	std::wcout << "[*] Set Service Registry ImagePath of driver: " << lpValueImagePath << std::endl;
 	// Set the Type for key
 	dwErrorCode = RegSetValueExW(phkResult,
 								lpValueImageType,
@@ -111,6 +113,7 @@ bool CreateRegKey()
 		RegCloseKey(phkResult);
 		return FALSE;
 	}
+	std::wcout << "[*] Set Registry Driver Type Key: " << lpValueImageType << std::endl;
 	// Set the ErrorControl key
 	dwErrorCode = RegSetValueExW(phkResult,
 								lpValueError,
@@ -122,6 +125,7 @@ bool CreateRegKey()
 		RegCloseKey(phkResult);
 		return FALSE;
 	}
+	std::wcout << "[*] Set Registry Driver ErrorControl Key: " << lpValueError << std::endl;
 	// Set the Start key
 	dwErrorCode = RegSetValueExW(phkResult,
 								lpValueStart,
@@ -133,6 +137,7 @@ bool CreateRegKey()
 		RegCloseKey(phkResult);
 		return FALSE;
 	}
+	std::wcout << "[*] Set Registry Driver Start Key: " << lpValueStart << std::endl;
 	RegCloseKey(phkResult);
 	return TRUE;
 }
@@ -144,16 +149,16 @@ int main()
 		std::cout << "Setting driver privilege failed" << std::endl;
 	}
 	else {
-		std::cout << "Setting driver privilege is GTG!" << std::endl;
+		std::cout << "[*] Setting driver token privs: SeLoadDriverPrivilege" << std::endl;
 		if (!CreateRegKey()) {
 			std::cout << "Setting driver REG keys failed" << std::endl;
 		}
 		else {
-			std::cout << "Setting REG keys was ok" << std::endl;
+			std::cout << "[*] Setting REG keys was ok!" << std::endl;
 		}
 	}
 
-	std::cout << "Press Enter to Continue";
+	std::cout << "-- Press Enter to Continue";
 	getchar();
 	return 0;
 }
