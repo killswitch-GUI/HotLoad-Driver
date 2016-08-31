@@ -1,7 +1,7 @@
-﻿Build started 7/14/2016 3:40:30 PM.
+﻿Build started 8/18/2016 1:30:39 PM.
      1>Project "C:\Users\tester\Documents\GitHub\HotLoad-LoadDriver\NtLoadDriver-C++\NtLoadDriver-C++\NtLoadDriver-C++.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\NtLoadDriver-C++.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ntloaddriver.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\NtLoadDriver-C++.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt "NtLoadDriver-C++.cpp" ntloaddriver.cpp
          ntloaddriver.cpp
      1>c:\program files (x86)\windows kits\8.1\include\shared\ntdef.h(139): warning C4005: 'MAX_NATURAL_ALIGNMENT': macro redefinition
          c:\program files (x86)\windows kits\8.1\include\um\winnt.h(118): note: see previous definition of 'MAX_NATURAL_ALIGNMENT'
@@ -94,16 +94,74 @@
      1>c:\program files (x86)\windows kits\8.1\include\um\winternl.h(241): error C2079: '_SYSTEM_PROCESSOR_PERFORMANCE_INFORMATION::KernelTime' uses undefined union '_LARGE_INTEGER'
      1>c:\program files (x86)\windows kits\8.1\include\um\winternl.h(242): error C2079: '_SYSTEM_PROCESSOR_PERFORMANCE_INFORMATION::UserTime' uses undefined union '_LARGE_INTEGER'
      1>c:\program files (x86)\windows kits\8.1\include\um\winternl.h(352): error C2079: '__PUBLIC_OBJECT_TYPE_INFORMATION::TypeName' uses undefined struct '_UNICODE_STRING'
-     1>c:\users\tester\documents\github\hotload-loaddriver\ntloaddriver-c++\ntloaddriver-c++\ntloaddriver.cpp(23): error C2373: 'RtlNtStatusToDosError': redefinition; different type modifiers
-         c:\program files (x86)\windows kits\8.1\include\um\winternl.h(556): note: see declaration of 'RtlNtStatusToDosError'
-     1>c:\users\tester\documents\github\hotload-loaddriver\ntloaddriver-c++\ntloaddriver-c++\ntloaddriver.cpp(30): error C2079: 'DriverServiceName' uses undefined struct '_UNICODE_STRING'
-     1>c:\users\tester\documents\github\hotload-loaddriver\ntloaddriver-c++\ntloaddriver-c++\ntloaddriver.cpp(31): error C2664: 'void RtlInitUnicodeString(PUNICODE_STRING,PCWSTR)': cannot convert argument 1 from 'int *' to 'PUNICODE_STRING'
-         c:\users\tester\documents\github\hotload-loaddriver\ntloaddriver-c++\ntloaddriver-c++\ntloaddriver.cpp(31): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
-     1>c:\users\tester\documents\github\hotload-loaddriver\ntloaddriver-c++\ntloaddriver-c++\ntloaddriver.cpp(36): error C2664: 'NTSTATUS NtLoadDriver(PUNICODE_STRING)': cannot convert argument 1 from 'int *' to 'PUNICODE_STRING'
-         c:\users\tester\documents\github\hotload-loaddriver\ntloaddriver-c++\ntloaddriver-c++\ntloaddriver.cpp(36): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
-     1>c:\users\tester\documents\github\hotload-loaddriver\ntloaddriver-c++\ntloaddriver-c++\ntloaddriver.cpp(37): warning C4390: ';': empty controlled statement found; is this the intent?
+     1>c:\program files (x86)\windows kits\8.1\include\um\lsalookup.h(67): error C2079: '_LSA_TRUST_INFORMATION::Name' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\lsalookup.h(140): error C2079: '_LSA_TRANSLATED_NAME::Name' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\lsalookup.h(169): error C2079: '_POLICY_ACCOUNT_DOMAIN_INFO::DomainName' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\lsalookup.h(188): error C2079: '_POLICY_DNS_DOMAIN_INFO::Name' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\lsalookup.h(189): error C2079: '_POLICY_DNS_DOMAIN_INFO::DnsDomainName' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\lsalookup.h(190): error C2079: '_POLICY_DNS_DOMAIN_INFO::DnsForestName' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(1860): error C2079: '_POLICY_AUDIT_LOG_INFO::AuditRetentionPeriod' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(1862): error C2079: '_POLICY_AUDIT_LOG_INFO::TimeToShutdown' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(1991): error C2079: '_POLICY_PRIMARY_DOMAIN_INFO::Name' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2012): error C2079: '_POLICY_PD_ACCOUNT_INFO::Name' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2047): error C2079: '_POLICY_REPLICA_SOURCE_INFO::ReplicaSource' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2048): error C2079: '_POLICY_REPLICA_SOURCE_INFO::ReplicaAccountName' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2072): error C2079: '_POLICY_MODIFICATION_INFO::ModifiedId' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2073): error C2079: '_POLICY_MODIFICATION_INFO::DatabaseCreationTime' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2190): error C2079: '_POLICY_DOMAIN_KERBEROS_TICKET_INFO::MaxServiceTicketAge' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2191): error C2079: '_POLICY_DOMAIN_KERBEROS_TICKET_INFO::MaxTicketAge' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2192): error C2079: '_POLICY_DOMAIN_KERBEROS_TICKET_INFO::MaxRenewAge' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2193): error C2079: '_POLICY_DOMAIN_KERBEROS_TICKET_INFO::MaxClockSkew' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2194): error C2079: '_POLICY_DOMAIN_KERBEROS_TICKET_INFO::Reserved' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2275): error C2079: '_TRUSTED_DOMAIN_NAME_INFO::Name' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2337): error C2079: '_TRUSTED_PASSWORD_INFO::Password' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2338): error C2079: '_TRUSTED_PASSWORD_INFO::OldPassword' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2410): error C2079: '_TRUSTED_DOMAIN_INFORMATION_EX::Name' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2411): error C2079: '_TRUSTED_DOMAIN_INFORMATION_EX::FlatName' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2421): error C2079: '_TRUSTED_DOMAIN_INFORMATION_EX2::Name' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2422): error C2079: '_TRUSTED_DOMAIN_INFORMATION_EX2::FlatName' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2445): error C2079: '_LSA_AUTH_INFORMATION::LastUpdateTime' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2527): error C2079: '_LSA_FOREST_TRUST_DOMAIN_INFO::DnsName' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2528): error C2079: '_LSA_FOREST_TRUST_DOMAIN_INFO::NetbiosName' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2558): error C2079: '_LSA_FOREST_TRUST_RECORD::Time' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2572): error C2079: '_LSA_FOREST_TRUST_RECORD::TopLevelName' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2614): error C2079: '_LSA_FOREST_TRUST_COLLISION_RECORD::Name' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2669): error C2079: '_LSA_LAST_INTER_LOGON_INFO::LastSuccessfulLogon' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2670): error C2079: '_LSA_LAST_INTER_LOGON_INFO::LastFailedLogon' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2679): error C2079: '_SECURITY_LOGON_SESSION_DATA::LogonId' uses undefined struct '_LUID'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2680): error C2079: '_SECURITY_LOGON_SESSION_DATA::UserName' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2681): error C2079: '_SECURITY_LOGON_SESSION_DATA::LogonDomain' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2682): error C2079: '_SECURITY_LOGON_SESSION_DATA::AuthenticationPackage' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2686): error C2079: '_SECURITY_LOGON_SESSION_DATA::LogonTime' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2692): error C2079: '_SECURITY_LOGON_SESSION_DATA::LogonServer' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2693): error C2079: '_SECURITY_LOGON_SESSION_DATA::DnsDomainName' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2694): error C2079: '_SECURITY_LOGON_SESSION_DATA::Upn' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2705): error C2079: '_SECURITY_LOGON_SESSION_DATA::LogonScript' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2706): error C2079: '_SECURITY_LOGON_SESSION_DATA::ProfilePath' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2707): error C2079: '_SECURITY_LOGON_SESSION_DATA::HomeDirectory' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2708): error C2079: '_SECURITY_LOGON_SESSION_DATA::HomeDirectoryDrive' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2710): error C2079: '_SECURITY_LOGON_SESSION_DATA::LogoffTime' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2711): error C2079: '_SECURITY_LOGON_SESSION_DATA::KickOffTime' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2712): error C2079: '_SECURITY_LOGON_SESSION_DATA::PasswordLastSet' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2713): error C2079: '_SECURITY_LOGON_SESSION_DATA::PasswordCanChange' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2714): error C2079: '_SECURITY_LOGON_SESSION_DATA::PasswordMustChange' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2807): error C2079: '_CENTRAL_ACCESS_POLICY_ENTRY::Name' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2808): error C2079: '_CENTRAL_ACCESS_POLICY_ENTRY::Description' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2809): error C2079: '_CENTRAL_ACCESS_POLICY_ENTRY::ChangeId' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2839): error C2079: '_CENTRAL_ACCESS_POLICY::Name' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2840): error C2079: '_CENTRAL_ACCESS_POLICY::Description' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(2841): error C2079: '_CENTRAL_ACCESS_POLICY::ChangeId' uses undefined struct '_UNICODE_STRING'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(3227): error C2079: '_NEGOTIATE_CALLER_NAME_REQUEST::LogonId' uses undefined struct '_LUID'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(3250): error C2079: '_DOMAIN_PASSWORD_INFORMATION::MaxPasswordAge' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(3251): error C2079: '_DOMAIN_PASSWORD_INFORMATION::MinPasswordAge' uses undefined union '_LARGE_INTEGER'
+     1>c:\program files (x86)\windows kits\8.1\include\um\ntsecapi.h(3251): fatal error C1003: error count exceeds 100; stopping compilation
+         NtLoadDriver-C++.cpp
+     1>c:\users\tester\documents\github\hotload-loaddriver\ntloaddriver-c++\ntloaddriver-c++\ntloaddriver-c++.cpp(31): warning C4800: 'DWORD': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\tester\documents\github\hotload-loaddriver\ntloaddriver-c++\ntloaddriver-c++\ntloaddriver-c++.cpp(35): warning C4800: 'DWORD': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\tester\documents\github\hotload-loaddriver\ntloaddriver-c++\ntloaddriver-c++\ntloaddriver-c++.cpp(41): warning C4800: 'DWORD': forcing value to bool 'true' or 'false' (performance warning)
+         Generating Code...
      1>Done Building Project "C:\Users\tester\Documents\GitHub\HotLoad-LoadDriver\NtLoadDriver-C++\NtLoadDriver-C++\NtLoadDriver-C++.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:00.68
+Time Elapsed 00:00:01.32

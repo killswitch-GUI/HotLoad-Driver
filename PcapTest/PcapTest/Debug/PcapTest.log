@@ -1,18 +1,18 @@
-﻿Build started 7/22/2016 10:09:17 PM.
-     1>Project "C:\Users\tester\Documents\Visual Studio 2015\Projects\PcapTest\PcapTest\PcapTest.vcxproj" on node 2 (Build target(s)).
+﻿Build started 8/30/2016 7:51:28 PM.
+     1>Project "C:\Users\tester\Documents\GitHub\HotLoad-LoadDriver\PcapTest\PcapTest\PcapTest.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\tester\Documents\Visual Studio 2015\Projects\PcapTest\Include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /D WPCAP /D HAVE_REMOTE /Gm /EHsc /RTC1 /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt PcapTest.cpp stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\tester\Documents\Visual Studio 2015\Projects\PcapTest\Include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /D WPCAP /D HAVE_REMOTE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt PcapTest.cpp stdafx.cpp
          stdafx.cpp
          PcapTest.cpp
-     1>c:\users\tester\documents\visual studio 2015\projects\pcaptest\pcaptest\pcaptest.cpp(1): warning C4005: 'HAVE_REMOTE': macro redefinition
-         c:\users\tester\documents\visual studio 2015\projects\pcaptest\pcaptest\pcaptest.cpp(1): note: command-line arguments:  see previous definition of 'HAVE_REMOTE'
+     1>c:\users\tester\documents\github\hotload-loaddriver\pcaptest\pcaptest\pcaptest.cpp(1): warning C4005: 'HAVE_REMOTE': macro redefinition
+         c:\users\tester\documents\github\hotload-loaddriver\pcaptest\pcaptest\pcaptest.cpp(1): note: command-line arguments:  see previous definition of 'HAVE_REMOTE'
          Generating Code...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\tester\Documents\Visual Studio 2015\Projects\PcapTest\Debug\PcapTest.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\tester\Documents\Visual Studio 2015\Projects\PcapTest\Lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib wpcap.lib Packet.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\tester\Documents\Visual Studio 2015\Projects\PcapTest\Debug\PcapTest.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\tester\Documents\Visual Studio 2015\Projects\PcapTest\Debug\PcapTest.lib" /MACHINE:X86 Debug\PcapTest.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\tester\Documents\GitHub\HotLoad-LoadDriver\PcapTest\Debug\PcapTest.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\tester\Documents\Visual Studio 2015\Projects\PcapTest\Lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib wpcap.lib Packet.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\tester\Documents\GitHub\HotLoad-LoadDriver\PcapTest\Debug\PcapTest.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\tester\Documents\GitHub\HotLoad-LoadDriver\PcapTest\Debug\PcapTest.lib" /MACHINE:X86 Debug\PcapTest.obj
          Debug\stdafx.obj
-         PcapTest.vcxproj -> C:\Users\tester\Documents\Visual Studio 2015\Projects\PcapTest\Debug\PcapTest.exe
-     1>Done Building Project "C:\Users\tester\Documents\Visual Studio 2015\Projects\PcapTest\PcapTest\PcapTest.vcxproj" (Build target(s)).
+         PcapTest.vcxproj -> C:\Users\tester\Documents\GitHub\HotLoad-LoadDriver\PcapTest\Debug\PcapTest.exe
+     1>Done Building Project "C:\Users\tester\Documents\GitHub\HotLoad-LoadDriver\PcapTest\PcapTest\PcapTest.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:03.48
+Time Elapsed 00:00:07.59

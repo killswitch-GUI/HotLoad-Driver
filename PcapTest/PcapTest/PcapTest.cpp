@@ -3,7 +3,7 @@
 #include <tchar.h>
 
 int _tmain()
-{
+{ // http://www.rhyous.com/2011/11/12/how-to-compile-winpcap-with-visual-studio-2010/
 	pcap_if_t * allAdapters;
 	pcap_if_t * adapter;
 	char errorBuffer[PCAP_ERRBUF_SIZE];

@@ -1,0 +1,14 @@
+﻿Build started 8/30/2016 8:44:14 PM.
+     1>Project "C:\Users\tester\Documents\GitHub\HotLoad-LoadDriver\PcapTest\Examples-pcap\basic_dump\basic_dump.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (C:\Users\tester\Documents\GitHub\HotLoad-LoadDriver\PcapTest\Examples-pcap\\Debug\x64\) contains files shared from another project (UDPdump.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I..\..\include /Zi /nologo /W4 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"C:\Users\tester\Documents\GitHub\HotLoad-LoadDriver\PcapTest\Examples-pcap\\Debug\x64\\" /Fd"C:\Users\tester\Documents\GitHub\HotLoad-LoadDriver\PcapTest\Examples-pcap\\Debug\x64\vc140.pdb" /Gd /TC /errorReport:prompt basic_dump.c
+         basic_dump.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\tester\Documents\GitHub\HotLoad-LoadDriver\PcapTest\Examples-pcap\\Debug\x64\basic_dump.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\..\lib\x64 wpcap.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\tester\Documents\GitHub\HotLoad-LoadDriver\PcapTest\Examples-pcap\\Debug\x64\basic_dump.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\tester\Documents\GitHub\HotLoad-LoadDriver\PcapTest\Examples-pcap\\Debug\x64\basic_dump.lib" /MACHINE:X64 "C:\Users\tester\Documents\GitHub\HotLoad-LoadDriver\PcapTest\Examples-pcap\\Debug\x64\basic_dump.obj"
+         basic_dump.vcxproj -> C:\Users\tester\Documents\GitHub\HotLoad-LoadDriver\PcapTest\Examples-pcap\\Debug\x64\basic_dump.exe
+     1>Done Building Project "C:\Users\tester\Documents\GitHub\HotLoad-LoadDriver\PcapTest\Examples-pcap\basic_dump\basic_dump.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.75
