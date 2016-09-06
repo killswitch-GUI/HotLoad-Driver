@@ -31,5 +31,8 @@
     <ClInclude Include="installDriver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Packet_dll_2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

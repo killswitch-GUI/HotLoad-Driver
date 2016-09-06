@@ -181,6 +181,7 @@
       <PrecompiledHeader />
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -256,6 +257,7 @@
   <ItemGroup>
     <ClInclude Include="base64.h" />
     <ClInclude Include="installDriver.h" />
+    <ClInclude Include="src\Packet_dll_2.h" />
     <ClInclude Include="src\ReflectiveDLLInjection.h" />
     <ClInclude Include="src\ReflectiveLoader.h" />
   </ItemGroup>
