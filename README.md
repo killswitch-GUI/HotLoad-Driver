@@ -1,4 +1,5 @@
 # Hot Load Your Driver
+Using C++ this project was Bsides Augusta for the RAT talk. Slides can be seen bellow and are extremely helpful for understanding the execution flow. These two methods have separate projects.
 
 # Demo / Slides:
 - http://www.slideshare.net/AlexanderRymdekoHarv/rat-repurposing-adversarial-tradecraft
