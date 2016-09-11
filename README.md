@@ -5,7 +5,7 @@ Using C++ this project was Bsides Augusta for the RAT talk. Slides can be seen b
 - http://www.slideshare.net/AlexanderRymdekoHarv/rat-repurposing-adversarial-tradecraft
 - NtLoadDriver()- https://www.youtube.com/watch?v=7LvV_dhKLqU
 - SC Load Driver- https://www.youtube.com/watch?v=0PrCEg2Xw8k
-- 
+
 # Build Enviroment
 Using the following OS and VS the build should be easy:
 * Windows 10 Pro
