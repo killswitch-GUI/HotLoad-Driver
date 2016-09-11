@@ -1,5 +1,9 @@
 # Hot Load Your Driver
 
+# Demo / Slides:
+http://www.slideshare.net/AlexanderRymdekoHarv/rat-repurposing-adversarial-tradecraft
+NtLoadDriver()- https://www.youtube.com/watch?v=7LvV_dhKLqU
+SC Load Driver- https://www.youtube.com/watch?v=0PrCEg2Xw8k
 
 ## SCLoadDriver
 
